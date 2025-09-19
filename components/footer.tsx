@@ -9,23 +9,23 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-             {/* logo import */}
-          <div className="flex space-x-2 mb-6">
-            <div className="flex justify-start">
-              <Link href="/" className="flex items-center space-x-3 group invert">
-                <div className={`relative group-hover:scale-105 transition-all duration-300 w-10 h-10`}>
+            {/* logo import */}
+            <div className="flex space-x-2 mb-6">
+              <div className="flex justify-start">
+                <Link href="/" className="flex items-center space-x-3 group invert">
+                  <div className={`relative group-hover:scale-105 transition-all duration-300 w-10 h-10`}>
 
-                  <Image src="/aurum-realty-logo.png" alt="Aurum Realty" fill className="object-contain" />
-                </div>
-                <div className="hidden sm:block">
-                  <div className="transition-all duration-300">
-                    <div className="text-xl font-bold text-gray-900">Aurum Realty</div>
-                    <div className="text-xs text-gray-600 font-medium -mt-1">The Gold Standard in Real Estate</div>
+                    <Image src="/aurum-realty-logo.png" alt="Aurum Realty" fill className="object-contain" />
                   </div>
-                </div>
-              </Link>
+                  <div className="hidden sm:block">
+                    <div className="transition-all duration-300">
+                      <div className="text-xl font-bold text-gray-900">Aurum Realty</div>
+                      <div className="text-xs text-gray-600 font-medium -mt-1">The Gold Standard in Real Estate</div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
             </div>
-          </div>
             <p className="text-gray-300 text-sm leading-relaxed">
               Dubai's premier luxury real estate agency, specializing in high-end properties and exceptional client
               service since 2015.
@@ -122,14 +122,23 @@ export default function Footer() {
                   United Arab Emirates
                 </span>
               </div>
-              <div className="flex items-center space-x-3">
+              <a
+                href="tel:+97141234567"
+                className={`flex items-center space-x-1 hover:text-primary transition-colors`}
+              >
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-gray-300">+971 4 123 4567</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-gray-300">info@aurumrealty.ae</span>
-              </div>
+
+                <span className="hidden 2xl:block"> +971 4 123 4567</span>
+              </a>
+
+              <a
+  href="mailto:info@aurumrealty.ae"
+  className="flex items-center space-x-3 hover:text-primary transition-colors"
+>
+  <Mail className="w-5 h-5 text-primary flex-shrink-0" />
+  <span className="text-gray-300">info@aurumrealty.ae</span>
+</a>
+
             </div>
           </div>
         </div>
