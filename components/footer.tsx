@@ -132,12 +132,12 @@ export default function Footer() {
               </a>
 
               <a
-  href="mailto:info@aurumrealty.ae"
-  className="flex items-center space-x-3 hover:text-primary transition-colors"
->
-  <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-  <span className="text-gray-300">info@aurumrealty.ae</span>
-</a>
+                href="mailto:info@aurumrealty.ae"
+                className="flex items-center space-x-3 hover:text-primary transition-colors"
+              >
+                <Mail className="w-5 h-5 text-primary flex-shrink-0" />
+                <span className="text-gray-300">info@aurumrealty.ae</span>
+              </a>
 
             </div>
           </div>
